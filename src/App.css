@@ -1,38 +1,1541 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.nav{
+   background-color: white;
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+   font-family: "Merriweather";
+}
+.nav .logo a{
+  font-size: x-large;
+}
+.nav .logo img{
+  height: 30px;
+}
+.nav .wrapper{
+  background-color: rgb(255, 255, 255);
+  max-width: 1250px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+.wrapper .logo a{
+  color: white;
+  text-decoration: none;
+  color:black;
+}
+.wrapper .nav-links{
+  display: inline-flex;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a{
+  color: white;
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav-links .ourproducts,.nav-links .ourcompany,.nav-links .followus{
+       padding: 9px 15px;
+}
+.nav-links .careers,.nav-links .openposns{
+  padding: 9px 15px;
+}
+.nav-links .contactbtn{
+  padding: 9px 15px;
+  background-color: #0A95FF;
+  border-radius: 5px;
+}
+.nav-links .contactbtn a{
+  color: white;
+}
+.nav-links .contactbtn:hover{
+  padding: 9px 15px;
+  background-color: #006fc4;
+  border-radius: 5px;
+}
+.nav-links .ourproducts:hover,.nav-links .ourcompany:hover,.nav-links .followus:hover{
+  padding: 9px 15px;
+  border-bottom: solid #F2740D;
+}
+.nav-links .careers:hover,.nav-links .openposns:hover{
+padding: 9px 15px;
+background-color: rgb(222, 222, 222);
+border-radius: 5px;
+}
+.nav-links .contactbtn{
+padding: 9px 15px;
+background-color: #0A95FF;
+border-radius: 5px;
+}
+
+
+.navcontactbtn a{
+  color: white;
+  
+}
+.nav-links  .companylist{
+  background-color: white;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  top: 65px;
+  transition: all ease 0.3s;
+}
+input {
+  opacity: 0;
+}
+.mobile-item{
+  display: none;
+}.mobile-item{
+  display: none;
+}
+.companylist li {
+  display: inline-flex;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 20px;
+}
+.nav-links .ourcompany:hover > .companylist{
+  opacity: 1;
+}
+.companylist li a{
+  padding: 3px;
+  border-radius: 5px;
+}
+.companylist li a:hover {
+  background-color: rgb(219, 218, 218);
+}
+.nav-links  .followuslist{
+  background-color: white;
+  line-height: 45px;
+  position: absolute;
+  opacity: 0;
+  top: 65px;
+  transition: all ease 0.3s;
+}
+.followus li {
+  display: inline-flex;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 2px;
+}
+.nav-links .followus:hover > .followuslist{
+  opacity: 1;
+}
+.followuslist li a{
+  padding: 3px;
+  border-radius: 5px;
+}
+.followuslist li a:hover {
+  background-color: rgb(219, 218, 218);
+}
+.oele1,.tele1,.tele2,.tele3,.hele1,.hele2{
+   display: grid;
+  grid-template-columns: 1fr 1fr; 
+  
+  
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: small;
+  border-radius: 5px;
+}
+.oele1:hover,.tele1:hover,.tele2:hover,.tele3:hover,.hele1:hover,.hele2:hover{
+  background-color: rgb(139, 137, 137,0.3);
+}
+.row{
+  border-right:solid rgb(139, 137, 137,0.25);
+}
+.mega-box{
+  position: absolute;
+  top: 70px;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  visibility: hidden;
+  transition: all ease 0.2s;
+
+}
+.nav-links .ourproducts:hover > .mega-box{
+  visibility: visible;
+}
+.mega-box .content{
+  background-color: white;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content .row .p{
+  color: gray;
+  font-size: small;
+}
+.Hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  padding: 10%;
+  padding-left: 0;
+  padding-bottom: 0%;
+}
+.Hero img{
+   height: 600px;
+}
+.Hero h3{
+   color: grey;
+   font-family: 'Merriweather';
+
+}
+.Hero h1{
+  font-size: 1cm;
+  font-weight: 550;
+  font-family: 'Merriweather';
+}
+.Hero p{
+  font-size: large;
+  font-family: 'Poppins';
+}
+.serving{
+  color: rgb(85, 83, 83);
+}
+.herobox{
+  padding: 5%;
+}
+.heroboxbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding:4%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.hboxele1,.hboxele2,.hboxele3,.hboxele4,.hboxele5{
+  padding: 3%;
+  text-align: center;
+}
+.hboxele1,.hboxele2,.hboxele3,.hboxele4{
+  border-right: solid rgb(171, 171, 171,0.5);
+}
+.awardscontent{
+  padding: 13%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+} 
+.awardscontent p{
+  line-height: 40px;
+  font-size: medium;
+  font-family: "Poppins";
+}
+.awardscontent a{
+  text-decoration: none;
+  color: rgb(2, 115, 185);
+}
+.awardscontent a:hover{
+  text-decoration: none;
+  color: rgb(0, 157, 255);
+}
+.awardsimg1,.awardsimg2,.awardsimg3,.awardsimg4{
+  height: 48px;
+  padding: 40%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.awardsimg1c,.awardsimg2c,.awardsimg3c,.awardsimg4c{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  text-align: center;
+}
+.awardsimages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.35cm;
+  font-family: "Poppins";
+}
+.awardsimages a{
+  text-decoration: none;
+  color: rgb(67, 66, 66);
+  font-weight: bold;
+  font-family: 'Merriweather';
+}
+.awardsimages a:hover{
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  font-family: 'Merriweather';
+}
+.linediv{
+  padding: 30%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.lines{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.lines::after,.lines::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 1px;
+  background:gray;
+  width: 40%;
+  top: 45%;
+}
+.lines::after{
+  left: -23px;
+}
+.lines::before{
+  right: -23px;
+}
+.lines p
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color:grey;
+}
+.linediv1{
+  padding: 5%;
+}
+.lines1{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.lines1::after,.lines1::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 1.0px;
+  background:rgb(139, 137, 137);
+  width: 40%;
+  top: 45%;
+}
+.lines1::after{
+  left: 0;
+}
+.lines1::before{
+  right:0;
+}
+.lines1 h3
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.headerproduct{
+  padding: 10%;
+  padding-top: 8%;
+  padding-bottom: 0;
+}
+.theproddivs{
+  padding: 10%;
+  padding-top: 2%;
+}
+.theproddivs button{
+  background-color:#0A95FF ;
+  color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: medium;
+}
+.theproddiv1 .theproddiv1head{
+  font-family: "Merriweather";
+}
+.theproddiv2 button{
+  padding: 10px;
+  width: 100px;
+  font-size: small;
+}
+.theproddiv2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 1%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.theproddiv1{
+  text-align: center;
+  background-color:#cde9ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.theproddiv1:hover{
+  text-align: center;
+  background-color:#95d1ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.products p{
+  color: rgb(83, 82, 82);
+  font-family: "Poppins";
+}
+.proddivprops{
+  display: flex;
+}
+
+
+.proddivheadprops{
+  display: flex;
+}
+.prodheadimgdivprops{
+  padding: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.prodheadpropstxt{
+  padding-left: 3%;
+}
+.proddivprops{
+  background-color:#cde9ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.proddivprops:hover{
+  background-color:#95d1ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.corevaldivs{
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8%;
+  padding-top: 3%;
+  border-radius: 8px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+  
+}
+.corevalhead{
+  font-family: "Merriweather";
+}
+.corevaltxt{
+  font-family: "Poppins";
+}
+.work{
+  padding: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: "Merriweather";
+  
+}
+.work h1{
+  font-size: x-large;
+}
+.work p{
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: "Poppins";
+}
+.workbtn{
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  grid-gap: 10px;
+}
+.workjobopen{
+  background-color: #0A95FF;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+}
+.workjobopen:hover{
+  background-color: #0967af;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+}
+.workcontact{
+  background-color: #d1e9fa;
+  padding: 1%;
+  color: #0967af;
+  border-radius: 10px;
+}
+.workcontact:hover{
+  background-color: #98d4ff;
+  padding: 1%;
+  color: #0967af;
+  border-radius: 10px;
+}
+.footerhelp{
+  background-color: #2F3337;
+  padding: 5%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  color: white;
+  
+}
+/* .footerhelpprops .helpimghover{
+    opacity: 0;
+}
+.footerhelpprops:hover .helpimghover{
+  opacity: 1;
+}
+.footerhelpprops:hover .helpimga{
+  opacity: 0;
+  
+} */
+.helptxt{
+  padding: 10%;
+  padding-left: 0;
+  padding-right: 20%;
+  font-family: "Poppins";
+}
+.helpbtn{
+  background-color: #F2740D;
+  border-radius: 8px;
+  width: max-content;
+  padding: 6.4%;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+  font-family: "Poppins";
+}
+footer{
+  background-color: #232629;
+  color: white;
+  font-family: "Poppins";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 4%;
+  font-size: small;
+}
+footer a{
+  color: gray;
+  display: grid;
+  
+}
+footer a:hover{
+  color: rgb(255, 255, 255);
+}
+.companies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  width:700px;
+  margin: auto;
+  padding: 50px;
+  grid-gap: 30px;
+  position: relative;
+  animation: move-comp 20s linear infinite;
+}
+.outcompdiv{
+  overflow: hidden;
+  width: 700px;
+  margin: auto;
+  
+}
+@keyframes move-comp {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -25%;
+  }
+  50%{
+     left: -50%;
+      
+  }
+  75%{
+      left: -75%;
+  }
+  100%{
+      left: 0%;
+  }
+}
+.companies img{
+  height: 33px;
+}
+.companiespage h3{
+  text-align: center;
+  color: grey;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 480px){
+  *{
+    margin-right: 0;
+    font-size: small;
+  }
+  .Hero {
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 10%;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  
+.Hero img{
+   height: 200px;
+}
+.Hero h3{
+   color: grey;
+   font-family: 'Merriweather';
+
+}
+.Hero h1{
+  font-size: medium;
+  font-weight: bold;
+  font-weight: 550;
+  font-family: 'Merriweather';
+}
+.Hero p{
+  font-size: small;
+  font-family: 'Poppins';
+}
+.serving{
+  color: rgb(85, 83, 83);
+}
+.herobox{
+  padding: 10%;
+}
+.heroboxbox{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding:10%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.hboxele1,.hboxele2,.hboxele3,.hboxele4,.hboxele5{
+  padding: 3%;
+  text-align: center;
+}
+.hboxele1,.hboxele2,.hboxele3,.hboxele4{
+  border-bottom: solid 1px rgb(171, 171, 171,0.5);
+  border-right: none;
+  
+}
+.awardscontent{
+  padding: 10%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  text-align: center;
+} 
+.awardscontent p{
+  line-height: 40px;
+  font-size: small;
+  font-family: "Poppins";
+}
+.awardscontent a{
+  text-decoration: none;
+  color: rgb(2, 115, 185);
+}
+.awardscontent a:hover{
+  text-decoration: none;
+  color: rgb(0, 157, 255);
+}
+.awardsimg1,.awardsimg2,.awardsimg3,.awardsimg4{
+  height: 48px;
+  padding: 40%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.awardsimg1c,.awardsimg2c,.awardsimg3c,.awardsimg4c{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  text-align: center;
+}
+.awardsimages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  padding: 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.35cm;
+  font-family: "Poppins";
+}
+.awardsimages a{
+  text-decoration: none;
+  color: rgb(67, 66, 66);
+  font-weight: bold;
+  font-family: 'Merriweather';
+}
+.awardsimages a:hover{
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  font-family: 'Merriweather';
+}
+.linediv{
+  padding: 30%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.lines{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.lines::after,.lines::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 1px;
+  background:gray;
+  width: 40%;
+  top: 45%;
+}
+.lines::after{
+  left: -23px;
+}
+.lines::before{
+  right: -23px;
+}
+.lines p
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color:grey;
+}
+.linediv1{
+  padding: 5%;
+}
+.lines1{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.lines1::after,.lines1::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 1.0px;
+  background:rgb(139, 137, 137);
+  width: 40%;
+  top: 45%;
+}
+.lines1::after{
+  left: 0;
+}
+.lines1::before{
+  right:0;
+}
+.lines1 h3
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.headerproduct{
+  padding: 10%;
+  padding-top: 8%;
+  padding-bottom: 0%;
+}
+.theproddivs{
+  padding: 10%;
+  padding-top: 2%;
+}
+.theproddivs button{
+  background-color:#0A95FF ;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: small;
+}
+.theproddiv1 .theproddiv1head{
+  font-family: "Merriweather";
+}
+.theproddiv2 button{
+  padding: 8px;
+  width: 100px;
+  font-size: small;
+}
+.theproddiv2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 1%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.theproddiv1{
+  text-align: center;
+  background-color:#cde9ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.theproddiv1:hover{
+  text-align: center;
+  background-color:#95d1ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.products p{
+  color: rgb(83, 82, 82);
+  font-family: "Poppins";
+}
+.proddivprops{
+  display: flex;
+}
+
+
+.proddivheadprops{
+  display: flex;
+}
+.prodheadimgdivprops{
+  padding: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+.prodheadpropstxt{
+  padding-left: 3%;
+}
+.proddivprops{
+  background-color:#cde9ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.proddivprops:hover{
+  background-color:#95d1ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.proddivprops img{
+ display: none;
+}
+.proddivheadprops img{
+  display: block;
+}
+
+.corevaldivs{
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: 1fr;
+  padding: 8%;
+  padding-top: 3%;
+  border-radius: 8px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+  
+}
+.corevalhead{
+  font-family: "Merriweather";
+}
+.corevaltxt{
+  font-family: "Poppins";
+}
+.work{
+  padding: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: "Merriweather";
+  
+}
+.work h1{
+  font-size: medium;
+}
+.work p{
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: "Poppins";
+}
+.workbtn{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.workjobopen{
+  background-color: #0A95FF;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+}
+.workjobopen:hover{
+  background-color: #0967af;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+}
+.workcontact{
+  background-color: #d1e9fa;
+  padding: 1%;
+  color: #0967af;
+  border-radius: 10px;
+}
+.workcontact:hover{
+  background-color: #98d4ff;
+  padding: 1%;
+  color: #0967af;
+  border-radius: 10px;
+}
+.footerhelp{
+  background-color: #2F3337;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  color: white;
+  padding-left: 0;
+  
+  
+  
+}
+.footerhelpprops{
+padding-left: 100px;
+}
+.helptxt{
+  text-align: center;
+  
+}
+/* .footerhelpprops .helpimghover{
+    opacity: 0;
+}
+.footerhelpprops:hover .helpimghover{
+  opacity: 1;
+}
+.footerhelpprops:hover .helpimga{
+  opacity: 0;
+  
+} */
+.helpimg img{
+  padding-left: 17%;
+}
+.helpbtn{
+  background-color: #F2740D;
+  border-radius: 8px;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+  font-family: "Poppins";
+  margin-left: 13%;
+  margin-right: 13%;
+  width: 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer{
+  background-color: #232629;
   color: white;
+  font-family: "Poppins";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10%;
+  padding-left: 10%;
+  font-size: small;
+}
+.footerimg{
+  grid-column: 1 / span 2;
 }
 
-.App-link {
-  color: #61dafb;
+
+footer a{
+  color: gray;
+  display: grid;
+  
+}
+footer a:hover{
+  color: rgb(255, 255, 255);
+}
+.companies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  width:300px;
+  margin: auto;
+  padding: 50px;
+  grid-gap: 30px;
+  position: relative;
+  animation: move-comp 20s linear infinite;
+}
+.outcompdiv{
+  overflow: hidden;
+  width: 300px;
+  margin: auto;
+  
+}
+@keyframes move-comp {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -25%;
+  }
+  50%{
+     left: -50%;
+      
+  }
+  75%{
+      left: -75%;
+  }
+  100%{
+      left: 0%;
+  }
+}
+.companies img{
+  height: 33px;
+}
+.companiespage h3{
+  text-align: center;
+  color: grey;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+}
+
+@media (max-width: 768px){
+  .lines1::after{
+    left: -30px;
   }
-  to {
-    transform: rotate(360deg);
+  .lines1::before{
+    right:-30px;
+  }
+  *{
+    margin-right: 0;
+    font-size: small;
+  }
+  .Hero {
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 10%;
+    padding-bottom: 0%;
+    text-align: center;
+  }
+  
+.Hero img{
+   height: 200px;
+}
+.Hero h3{
+   color: grey;
+   font-family: 'Merriweather';
+
+}
+.Hero h1{
+  font-size: medium;
+  font-weight: bold;
+  font-weight: 550;
+  font-family: 'Merriweather';
+}
+.Hero p{
+  font-size: small;
+  font-family: 'Poppins';
+}
+.serving{
+  color: rgb(85, 83, 83);
+}
+.herobox{
+  padding: 10%;
+}
+.heroboxbox{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding:10%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.hboxele1,.hboxele2,.hboxele3,.hboxele4,.hboxele5{
+  padding: 3%;
+  text-align: center;
+}
+.hboxele1,.hboxele2,.hboxele3,.hboxele4{
+  border-bottom: solid 1px rgb(171, 171, 171,0.5);
+  border-right: none;
+  
+}
+.awardscontent{
+  padding: 10%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  text-align: center;
+} 
+.awardscontent p{
+  line-height: 40px;
+  font-size: small;
+  font-family: "Poppins";
+}
+.awardscontent a{
+  text-decoration: none;
+  color: rgb(2, 115, 185);
+}
+.awardscontent a:hover{
+  text-decoration: none;
+  color: rgb(0, 157, 255);
+}
+.awardsimg1,.awardsimg2,.awardsimg3,.awardsimg4{
+  height: 48px;
+  padding: 40%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.awardsimg1c,.awardsimg2c,.awardsimg3c,.awardsimg4c{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  text-align: center;
+}
+.awardsimages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  padding: 10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.35cm;
+  font-family: "Poppins";
+}
+.awardsimages a{
+  text-decoration: none;
+  color: rgb(67, 66, 66);
+  font-weight: bold;
+  font-family: 'Merriweather';
+}
+.awardsimages a:hover{
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  font-family: 'Merriweather';
+}
+.linediv{
+  padding: 30%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.lines{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.lines::after,.lines::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 1px;
+  background:gray;
+  width: 40%;
+  top: 45%;
+}
+.lines::after{
+  left: -23px;
+}
+.lines::before{
+  right: -23px;
+}
+.lines p
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color:grey;
+}
+.linediv1{
+  padding: 5%;
+}
+.lines1{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.lines1::after,.lines1::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 1.0px;
+  background:rgb(139, 137, 137);
+  width: 40%;
+  top: 45%;
+}
+.lines1::after{
+  left: 0;
+}
+.lines1::before{
+  right:0;
+}
+.lines1 h3
+{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.headerproduct{
+  padding: 10%;
+  padding-top: 8%;
+  padding-bottom: 0%;
+}
+.theproddivs{
+  padding: 10%;
+  padding-top: 2%;
+}
+.theproddivs button{
+  background-color:#0A95FF ;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: small;
+}
+.theproddiv1 .theproddiv1head{
+  font-family: "Merriweather";
+}
+.theproddiv2 button{
+  padding: 8px;
+  width: 100px;
+  font-size: small;
+}
+.theproddiv2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 1%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.theproddiv1{
+  text-align: center;
+  background-color:#cde9ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.theproddiv1:hover{
+  text-align: center;
+  background-color:#95d1ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.products p{
+  color: rgb(83, 82, 82);
+  font-family: "Poppins";
+}
+.proddivprops{
+  display: flex;
+}
+
+
+.proddivheadprops{
+  display: flex;
+}
+.prodheadimgdivprops{
+  padding: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+.prodheadpropstxt{
+  padding-left: 3%;
+}
+.proddivprops{
+  background-color:#cde9ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.proddivprops:hover{
+  background-color:#95d1ff ;
+  border-radius: 10px;
+  padding: 8%;
+}
+.proddivprops img{
+ display: none;
+}
+.proddivheadprops img{
+  display: block;
+}
+
+.corevaldivs{
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: 1fr;
+  padding: 8%;
+  padding-top: 3%;
+  border-radius: 8px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+  
+}
+.corevalhead{
+  font-family: "Merriweather";
+}
+.corevaltxt{
+  font-family: "Poppins";
+}
+.work{
+  padding: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: "Merriweather";
+  
+}
+.work h1{
+  font-size: medium;
+}
+.work p{
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: "Poppins";
+}
+.workbtn{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.workjobopen{
+  background-color: #0A95FF;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+}
+.workjobopen:hover{
+  background-color: #0967af;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+}
+.workcontact{
+  background-color: #d1e9fa;
+  padding: 1%;
+  color: #0967af;
+  border-radius: 10px;
+}
+.workcontact:hover{
+  background-color: #98d4ff;
+  padding: 1%;
+  color: #0967af;
+  border-radius: 10px;
+}
+.footerhelp{
+  background-color: #2F3337;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  color: white;
+  padding-left: 0;
+  
+  
+  
+}
+.footerhelpprops{
+padding-left: 100px;
+}
+.helptxt{
+  text-align: center;
+  
+}
+/* .footerhelpprops .helpimghover{
+    opacity: 0;
+}
+.footerhelpprops:hover .helpimghover{
+  opacity: 1;
+}
+.footerhelpprops:hover .helpimga{
+  opacity: 0;
+  
+} */
+.helpimg img{
+  padding-left: 17%;
+}
+.helpbtn{
+  background-color: #F2740D;
+  border-radius: 8px;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+  font-family: "Poppins";
+  margin-left: 13%;
+  margin-right: 13%;
+  width: 80px;
+  text-align: center;
+}
+
+
+
+footer{
+  background-color: #232629;
+  color: white;
+  font-family: "Poppins";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10%;
+  padding-left: 10%;
+  font-size: small;
+}
+.footerimg{
+  grid-column: 1 / span 2;
+}
+
+
+footer a{
+  color: gray;
+  display: grid;
+  
+}
+footer a:hover{
+  color: rgb(255, 255, 255);
+}
+.companies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  width:300px;
+  margin: auto;
+  padding: 50px;
+  grid-gap: 30px;
+  position: relative;
+  animation: move-comp 20s linear infinite;
+}
+.outcompdiv{
+  overflow: hidden;
+  width: 300px;
+  margin: auto;
+  
+}
+@keyframes move-comp {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -25%;
+  }
+  50%{
+     left: -50%;
+      
+  }
+  75%{
+      left: -75%;
+  }
+  100%{
+      left: 0%;
   }
 }
+.companies img{
+  height: 33px;
+}
+.companiespage h3{
+  text-align: center;
+  color: grey;
+  font-weight: 500;
+}
+
+
+}
+@media  screen and (max-width:970px) {
+  .wrapper .nav-links{
+    display: none;
+  }
+  .nav .logo a{
+    font-size: small;
+  }
+  .nav .logo img{
+    height: 30px;
+  }
+  /* .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    display: block;
+    top: 0;
+    right: 0;
+    overflow-y:auto;
+    line-height: 50px;
+    padding: 50px 10px;
+  }
+  .wrapper .nav-links li{
+    margin: 15px 10px;
+  }
+  .wrapper .nav-links li a{
+    padding: 0 20px;
+    display: block;
+    font-size:small;
+  }
+  .nav-links .companylist{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    top: 65px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .nav-links .companylist li{
+    margin: 0;
+  }
+  .nav-links .companylist li a{
+    font-size: small;
+    border-radius: 5px;
+  }
+  .nav-links .mobile-item{
+    display: block;
+    font-size: small;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: all ease 0.1s;
+  }
+  .nav-links .mobile-item:hover{
+        background-color: rgb(211, 211, 211);
+  }
+  .nav-links  .companylist{
+    background-color: white;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    top: 65px;
+    transition: all ease 0.3s;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  #showDrop:checked ~ .companylist{
+    max-height: 100%  ;
+  }
+  input {
+    opacity: 1;
+  } */
+  
+ 
+  
+
+}
+

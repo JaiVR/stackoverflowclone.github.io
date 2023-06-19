@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import Nav from './Nav';
+import Hero from './Hero';
 import './App.css';
+import Herobox from './Herobox';
+import Awards from './Awards';
+import Product from './Products';
+import Corevalues from './Corevalues';
+import Workcontact from './Workcontact'
+import Footer from './Footer';
+import Companies from './Companies';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Hero />
+      <Herobox/>
+      <Awards/>
+      <Product/>
+      <Companies/>
+      <Corevalues/>
+      <Workcontact/>
+      <Footer/>
     </div>
   );
 }
