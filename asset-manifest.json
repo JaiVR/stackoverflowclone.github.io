@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stackoverflow.github.io/static/css/main.22f05cb0.css",
+    "main.js": "/stackoverflow.github.io/static/js/main.49be78d7.js",
+    "static/js/787.8c6619b3.chunk.js": "/stackoverflow.github.io/static/js/787.8c6619b3.chunk.js",
+    "index.html": "/stackoverflow.github.io/index.html",
+    "main.22f05cb0.css.map": "/stackoverflow.github.io/static/css/main.22f05cb0.css.map",
+    "main.49be78d7.js.map": "/stackoverflow.github.io/static/js/main.49be78d7.js.map",
+    "787.8c6619b3.chunk.js.map": "/stackoverflow.github.io/static/js/787.8c6619b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22f05cb0.css",
+    "static/js/main.49be78d7.js"
+  ]
+}
