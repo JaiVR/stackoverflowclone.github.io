@@ -6,7 +6,7 @@ export default function Nav(){
             <div className="wrapper">
                 <div className="logo">
                     <img src="stacklogo.svg"></img>
-                    <a href="#">stack<strong>overflow</strong></a>
+                    <a href="#">stack<strong className="overflowtext">overflow</strong></a>
                 </div>
                 <ul className="nav-links">
                     
